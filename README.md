@@ -59,7 +59,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.minsorted;
+})();
 })();
 </script>
 ```
@@ -174,6 +176,7 @@ var v = minsorted.ndarray( N, x, 2, 1 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var x;
 var i;
@@ -187,6 +190,7 @@ console.log( x );
 var v = minsorted( x.length, x, 1 );
 console.log( v );
 
+})();
 })();
 </script>
 </body>
@@ -289,13 +293,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dminsorted]: https://github.com/stdlib-js/stats-base-dminsorted/tree/umd
+[@stdlib/stats/base/dminsorted]: https://github.com/stdlib-js/stats-base-dminsorted/tree/umd/tree/umd
 
-[@stdlib/stats/base/maxsorted]: https://github.com/stdlib-js/stats-base-maxsorted/tree/umd
+[@stdlib/stats/base/maxsorted]: https://github.com/stdlib-js/stats-base-maxsorted/tree/umd/tree/umd
 
-[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min/tree/umd
+[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min/tree/umd/tree/umd
 
-[@stdlib/stats/base/sminsorted]: https://github.com/stdlib-js/stats-base-sminsorted/tree/umd
+[@stdlib/stats/base/sminsorted]: https://github.com/stdlib-js/stats-base-sminsorted/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
