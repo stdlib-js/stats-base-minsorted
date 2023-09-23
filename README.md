@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@deno/mod.js';
+import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@v0.1.0-deno/mod.js';
 ```
 
 #### minsorted( N, x, stride )
@@ -155,7 +155,7 @@ var v = minsorted.ndarray( N, x, 2, 1 );
 
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@deno/mod.js';
+import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@v0.1.0-deno/mod.js';
 
 var x;
 var i;
