@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@esm/index.mjs';
+import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@v0.1.1-esm/index.mjs';
 ```
 
 #### minsorted( N, x, stride )
@@ -160,7 +160,7 @@ var v = minsorted.ndarray( N, x, 2, 1 );
 <script type="module">
 
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@esm/index.mjs';
+import minsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@v0.1.1-esm/index.mjs';
 
 var x;
 var i;
