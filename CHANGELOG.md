@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-20)
+## Unreleased (2025-02-22)
+
+<section class="features">
+
+### Features
+
+-   [`7327ed0`](https://github.com/stdlib-js/stdlib/commit/7327ed001d3c1c64808a4658c76faa9eb3209900) - add support for accessor arrays and refactor `stats/base/minsorted` [(#5353)](https://github.com/stdlib-js/stdlib/pull/5353)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`7327ed0`](https://github.com/stdlib-js/stdlib/commit/7327ed001d3c1c64808a4658c76faa9eb3209900) - **feat:** add support for accessor arrays and refactor `stats/base/minsorted` [(#5353)](https://github.com/stdlib-js/stdlib/pull/5353) _(by Vivek Maurya, Athan Reines)_
 -   [`a951a6d`](https://github.com/stdlib-js/stdlib/commit/a951a6d2ed9891399cba81b0834fe73b851247b7) - **refactor:** update paths _(by Aayush Khanna)_
 
 </details>
@@ -24,9 +35,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
+-   Athan Reines
+-   Vivek Maurya
 
 </section>
 

@@ -1,9 +1,12 @@
-"use strict";var a=function(t,e){return function(){return e||t((e={exports:{}}).exports,e),e.exports}};var o=a(function(h,f){
-var v=require('@stdlib/math-base-assert-is-nan/dist'),s=require('@stdlib/math-base-assert-is-negative-zero/dist');function g(t,e,n){var i,r;return t<=0?NaN:t===1||n===0?e[0]:(n<0?(i=e[(1-t)*n],r=e[0]):(i=e[0],r=e[(t-1)*n]),v(i)||v(r)?NaN:i===r?s(i)||s(r)?-0:i:i<r?i:r)}f.exports=g
-});var m=a(function(j,N){
-var q=require('@stdlib/math-base-assert-is-nan/dist'),c=require('@stdlib/math-base-assert-is-negative-zero/dist');function l(t,e,n,i){var r,u;return t<=0?NaN:t===1||n===0?e[0]:(r=e[i],u=e[i+(t-1)*n],q(r)||q(u)?NaN:r===u?c(r)||c(u)?-0:r:r<u?r:u)}N.exports=l
-});var y=a(function(k,d){
-var Z=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),p=o(),O=m();Z(p,"ndarray",O);d.exports=p
-});var R=y();module.exports=R;
+"use strict";var v=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var d=v(function(C,q){
+var c=require('@stdlib/math-base-assert-is-nan/dist'),f=require('@stdlib/math-base-assert-is-negative-zero/dist');function Z(e,r,u,n){var i,a,t,s;return i=r.data,a=r.accessors[0],e<=0?NaN:e===1||u===0?a(i,0):(t=a(i,n),s=a(i,n+(e-1)*u),c(t)||c(s)?NaN:t===s?f(t)||f(s)?-0:t:t<s?t:s)}q.exports=Z
+});var o=v(function(D,y){
+var m=require('@stdlib/math-base-assert-is-nan/dist'),p=require('@stdlib/math-base-assert-is-negative-zero/dist'),j=require('@stdlib/array-base-arraylike2object/dist'),k=d();function O(e,r,u,n){var i,a,t;return e<=0?NaN:(t=j(r),t.accessorProtocol?k(e,t,u,n):e===1||u===0?r[0]:(i=r[n],a=r[n+(e-1)*u],m(i)||m(a)?NaN:i===a?p(i)||p(a)?-0:i:i<a?i:a))}y.exports=O
+});var g=v(function(E,N){
+var P=require('@stdlib/strided-base-stride2offset/dist'),R=o();function h(e,r,u){return R(e,r,u,P(e,u))}N.exports=h
+});var b=v(function(F,x){
+var w=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),l=g(),z=o();w(l,"ndarray",z);x.exports=l
+});var A=b();module.exports=A;
+/** @license Apache-2.0 */
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
