@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-10)
+## Unreleased (2025-03-29)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`1e9e65d`](https://github.com/stdlib-js/stdlib/commit/1e9e65dbba33062853608b997a3076f00fa37234) - **refactor:** update paths _(by Aayush Khanna)_
 -   [`7327ed0`](https://github.com/stdlib-js/stdlib/commit/7327ed001d3c1c64808a4658c76faa9eb3209900) - **feat:** add support for accessor arrays and refactor `stats/base/minsorted` [(#5353)](https://github.com/stdlib-js/stdlib/pull/5353) _(by Vivek Maurya, Athan Reines)_
 -   [`a951a6d`](https://github.com/stdlib-js/stdlib/commit/a951a6d2ed9891399cba81b0834fe73b851247b7) - **refactor:** update paths _(by Aayush Khanna)_
 
