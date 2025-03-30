@@ -41,38 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-minsorted
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-minsorted = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var minsorted = require( 'path/to/vendor/umd/stats-base-minsorted/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.minsorted;
-})();
-</script>
+var minsorted = require( '@stdlib/stats-base-minsorted' );
 ```
 
 #### minsorted( N, x, strideX )
@@ -168,25 +162,15 @@ var v = minsorted.ndarray( 4, x, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-minsorted@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var minsorted = require( '@stdlib/stats-base-minsorted' );
 
 var x = linspace( -5.0, 5.0, 10 );
 console.log( x );
 
 var v = minsorted( x.length, x, 1 );
 console.log( v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -204,7 +188,7 @@ console.log( v );
 -   <span class="package-name">[`@stdlib/stats-strided/dminsorted`][@stdlib/stats/strided/dminsorted]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a sorted double-precision floating-point strided array.</span>
 -   <span class="package-name">[`@stdlib/stats-base/maxsorted`][@stdlib/stats/base/maxsorted]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a sorted strided array.</span>
 -   <span class="package-name">[`@stdlib/stats-base/min`][@stdlib/stats/base/min]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a strided array.</span>
--   <span class="package-name">[`@stdlib/stats-base/sminsorted`][@stdlib/stats/base/sminsorted]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a sorted single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats-strided/sminsorted`][@stdlib/stats/strided/sminsorted]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a sorted single-precision floating-point strided array.</span>
 
 </section>
 
@@ -284,19 +268,19 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor/tree/umd
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 <!-- <related-links> -->
 
-[@stdlib/stats/strided/dminsorted]: https://github.com/stdlib-js/stats-strided-dminsorted/tree/umd
+[@stdlib/stats/strided/dminsorted]: https://github.com/stdlib-js/stats-strided-dminsorted
 
-[@stdlib/stats/base/maxsorted]: https://github.com/stdlib-js/stats-base-maxsorted/tree/umd
+[@stdlib/stats/base/maxsorted]: https://github.com/stdlib-js/stats-base-maxsorted
 
-[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min/tree/umd
+[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min
 
-[@stdlib/stats/base/sminsorted]: https://github.com/stdlib-js/stats-base-sminsorted/tree/umd
+[@stdlib/stats/strided/sminsorted]: https://github.com/stdlib-js/stats-strided-sminsorted
 
 <!-- </related-links> -->
 
